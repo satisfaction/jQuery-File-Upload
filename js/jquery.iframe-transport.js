@@ -15,7 +15,7 @@
     'use strict';
     if (typeof define === 'function' && define.amd) {
         // Register as an anonymous AMD module:
-        define(['jquery'], factory);
+        define('jquery.iframe-transport', ['jquery'], factory);
     } else {
         // Browser globals:
         factory(window.jQuery);
