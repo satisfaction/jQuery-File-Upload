@@ -19,10 +19,10 @@
         define([
             'jquery',
             'angular',
-            './jquery.fileupload-image',
-            './jquery.fileupload-audio',
-            './jquery.fileupload-video',
-            './jquery.fileupload-validate'
+            'jquery.fileupload-image',
+            'jquery.fileupload-audio',
+            'jquery.fileupload-video',
+            'jquery.fileupload-validate'
         ], factory);
     } else {
         factory();
@@ -195,7 +195,7 @@
         })
 
         // The FileUploadController initializes the fileupload widget and
-        // provides scope methods to control the File Upload functionality: 
+        // provides scope methods to control the File Upload functionality:
         .controller('FileUploadController', [
             '$scope', '$element', '$attrs', '$window', 'fileUpload',
             function ($scope, $element, $attrs, $window, fileUpload) {

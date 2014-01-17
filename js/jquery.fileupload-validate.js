@@ -17,7 +17,7 @@
         // Register as an anonymous AMD module:
         define([
             'jquery',
-            './jquery.fileupload-process'
+            'jquery.fileupload-process'
         ], factory);
     } else {
         // Browser globals:
@@ -33,7 +33,7 @@
         {
             action: 'validate',
             // Always trigger this action,
-            // even if the previous action was rejected: 
+            // even if the previous action was rejected:
             always: true,
             // Options taken from the global options map:
             acceptFileTypes: '@',
